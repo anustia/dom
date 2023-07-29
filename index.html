@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	<title></title>
+	
+</head>
+<body>
+<!--1	<p onclick="changeText()">Click me to change the text</p>
+	<script>
+		function changeText()	{
+			const text=document.querySelector("p")
+			text.innerHTML="hello dom"
+			/*text.appendChild(document.createTextNode("hello dom!"))*/
+	}
+	
+	
+	</script>-->
+<!--2	<button type="button" onclick="changeColor()">click</button>
+	<script > 
+		function changeColor(){
+			let element=document.querySelector("button")
+		element.style.backgroundColor = "red";
+		element.style.color="white";
+		}
+	</script>-->
+	<!--3<div onclick="make_p()">
+		
+	</div>
+	<script>
+		function make_p(){
+		let div=document.querySelector("div");
+		let paragraph=document.createElement("p");
+		let text=document.createTextNode("new paraghraph");
+		paragraph.appendChild(text);
+		div.appendChild(paragraph);
+
+			
+		}
+		
+	</script>-->
+<!--4	<button onclick ="click_1()">  click</button>
+	<script>
+		function click_1() {
+  alert("button clicked!");
+}
+		
+	</script>-->
+	<form name="myForm" action="/action_page.php" onsubmit="return add()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+  <script type="text/javascript">
+  	function add(){
+  		let input=document.forms["myForm"]["fname"].value;
+       if(input==""||input==null){
+  			alert("error")
+  			return false;
+  		}else{
+  			alert("add your name")
+
+  		}
+  	}
+  </script>
+
+
+	
+
+</body>
+</html>
